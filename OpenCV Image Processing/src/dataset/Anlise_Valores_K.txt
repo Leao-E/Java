@@ -1,0 +1,33 @@
+Análise de resultados para k = {1,2,3, 4, 5}
+
+K = 1
+Correctly Classified Instances          27               84.375%
+
+Incorrectly Classified Instances         5               15.625%
+
+
+K = 2
+Correctly Classified Instances          29               90.625%
+
+Incorrectly Classified Instances         3                9.375%
+
+
+K = 3
+
+Correctly Classified Instances          27               84.375%
+
+Incorrectly Classified Instances         5               15.625%
+
+
+K = 4
+
+Correctly Classified Instances          28               87.5%
+
+Incorrectly Classified Instances         4               12.5%
+
+
+K = 5
+
+Correctly Classified Instances  	25               78.125%
+
+Incorrectly Classified Instances         7               21.875%
