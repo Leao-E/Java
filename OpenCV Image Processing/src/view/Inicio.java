@@ -1,5 +1,6 @@
 package view;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.opencv.core.Core;
@@ -13,7 +14,7 @@ import javafx.stage.Stage;
 
 public class Inicio extends Application {
 	/* Caminho do logo */
-	private String caminhoLogo = "file:///C:/Users/eeman/Documents/Eclipse/Processamento-Img-OpenCV/src/data/Logo.png";
+	File Logo = new File("src/data/Logo.png");
 	/*Carrega a GUI 
 	 *seta a GUI no stage
 	 *desativa o resize
@@ -26,7 +27,7 @@ public class Inicio extends Application {
 		stage.setScene(scene);
 		stage.setResizable(false);
 		stage.setTitle("LP2 - Processamento de Imagem Java");
-		stage.getIcons().add(new Image(caminhoLogo));
+		stage.getIcons().add(new Image(Logo.toURI().toString()));
 		stage.show();
 	}
 	//necessario para o OpenCV

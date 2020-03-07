@@ -2,9 +2,9 @@ package control;
 
 import java.io.File;
 import java.net.URL;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -33,7 +33,7 @@ public class ControleGUI implements Initializable {
 	
 	private String caminhoDisplayImg = null;
 	/* Caminho para o dataset */
-	private String caminhoDataset = "C:\\Users\\eeman\\Documents\\Eclipse\\Processamento-Img-OpenCV\\src\\dataset\\dataset.csv";
+	private String caminhoDataset = Paths.get(System.getProperty("user.dir"),"src","dataset","dataset.csv").toString();
 	private Dataset dataset = new Dataset();
 	private Imagem imagem = new Imagem();
 	private KNN knn = new KNN();
